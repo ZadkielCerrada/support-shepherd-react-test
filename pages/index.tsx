@@ -1,10 +1,18 @@
-import { Grid, Text } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
+import PannableCards from '@components/PannableCards';
 import { FC } from 'react';
 
-const Home: FC = () => (
-  <Grid placeContent="center" h="100vh">
-    <Text>Hello Boilerplate</Text>
-  </Grid>
-);
+const Home: FC = () => {
+  return (
+    <>
+      <Box maxW="90vw" m="auto" mt="20px">
+        <Text>Latest Activity:</Text>
+      </Box>
+      <Box mt="-50px">
+        <PannableCards />
+      </Box>
+    </>
+  );
+};
 
 export default Home;
