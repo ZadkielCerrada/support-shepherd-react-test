@@ -5,7 +5,7 @@ import { FC } from 'react';
 const Home: FC = () => {
   return (
     <>
-      <Box maxW="90vw" m="auto" mt="20px">
+      <Box maxW="90vw" m="auto" mt="20px" userSelect="none">
         <Text>Latest Activity:</Text>
       </Box>
       <Box mt="-50px">

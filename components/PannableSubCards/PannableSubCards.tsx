@@ -1,3 +1,4 @@
+import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { Box, Text } from '@chakra-ui/react';
 import { FC, useEffect } from 'react';
 
@@ -58,6 +59,12 @@ const PannableSubCards: FC = () => {
             </Box>
           );
         })}
+      </Box>
+      <Box pos="absolute" right={0} top="50%" borderRadius="50%" bg="#26D6E8" onClick={scrollRight} cursor="pointer">
+        <ChevronRightIcon fontSize="20px" color="white" />
+      </Box>
+      <Box pos="absolute" left={0} top="50%" borderRadius="50%" bg="#26D6E8" onClick={scrollLeft} cursor="pointer">
+        <ChevronLeftIcon fontSize="20px" color="white" />
       </Box>
     </Box>
   );
